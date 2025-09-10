@@ -1,0 +1,29 @@
+@import "tailwindcss";
+
+
+body {
+  background-color: #000;
+}
+
+.font-creepy {
+  font-family: 'Creepster', cursive;
+  text-shadow: 2px 2px 4px #800080;
+}
+
+.glass-bg {
+  background-color: rgba(26, 26, 46, 0.7);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+@keyframes pulse-shadow {
+  0% { box-shadow: 0 0 10px 0px rgba(128, 0, 128, 0.4); }
+  50% { box-shadow: 0 0 20px 5px rgba(128, 0, 128, 0.8); }
+  100% { box-shadow: 0 0 10px 0px rgba(128, 0, 128, 0.4); }
+}
+
+.hypnotic-glow {
+  animation: pulse-shadow 2s infinite ease-in-out;
+}
+
