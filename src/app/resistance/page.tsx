@@ -1,9 +1,14 @@
 
 
+import LogoutButton from '../components/LogoutButton';
+
 export default function resistance(){
     return (
           // Contenido de la página "La Resistencia"
           <div className="w-full h-full flex flex-col items-center p-4 overflow-y-auto">
+            <div className="w-full flex justify-end mb-4">
+              <LogoutButton />
+            </div>
             <h2 className="font-creepy text-2xl md:text-3xl text-purple-400 mb-6">
               La Resistencia 😎
             </h2>
