@@ -1,15 +1,14 @@
 'use client';
 
 import { useRouter } from 'next/navigation';
+import { clearSession } from '@/lib/session';
 
 export default function LogoutButton() {
   const router = useRouter();
 
   const handleLogout = () => {
-    localStorage.removeItem('token');
-    localStorage.removeItem('user');
-    document.cookie = 'user=; path=/; expires=Thu, 01 Jan 1970 00:00:00 GMT';
-    router.push('/login');
+    clearSession();
+    window.location.href = '/login';
   };
 
   return (

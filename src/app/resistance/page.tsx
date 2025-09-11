@@ -1,6 +1,6 @@
 
 
-import LogoutButton from '../components/LogoutButton';
+import LogoutButton from '../components/logoutB';
 
 export default function resistance(){
     return (
